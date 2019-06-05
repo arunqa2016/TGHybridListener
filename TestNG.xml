@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="tests">
+	
+	<listeners>
+		<listener class-name="com.tg.extentReportListener.NGExtentReport" />
+	</listeners>
+	
+	<test name="Regression Testing">
+		<classes>
+			<class name="com.tg.testCase.LoginTestCase"></class>
+			<class name="com.tg.testCase.DashboardTestCase"></class>
+			<class name="com.tg.testCase.SingaporeGameTestCase"></class>
+		</classes>
+	</test>
+</suite>
