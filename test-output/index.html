@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,11 +114,6 @@
                       <a href="#" panel-name="suite-tests" class="show-methods passed suite-tests"> (show)</a> <!-- show-methods passed suite-tests -->
                     </span>
                     <div class="method-list-content passed suite-tests">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.tg.testCase.DashboardTestCase" hash-for-method="dashboardTestCase">dashboardTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-tests" title="com.tg.testCase.LoginTestCase" hash-for-method="verifyLoginPageTitleTest">verifyLoginPageTitleTest</a> <!-- method navigator-link -->
@@ -155,7 +150,7 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;VIDHAAN-VAIO&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Vidhaan\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.169, webStorageEnabled: true}
-Session ID: 0ab959d6fea91484974b5765ae01ec31
+Session ID: 224ac8c57c481749f4bafa3dcca6ed41
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -166,34 +161,16 @@ Session ID: 0ab959d6fea91484974b5765ae01ec31
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:428)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
 	at com.tg.webPages.LoginPage.validateLoginFunctionality(LoginPage.java:39)
-	at com.tg.testCase.LoginTestCase.verifyValidLoginTest(LoginTestCase.java:36)
-... Removed 37 stack frames
+	at com.tg.testCase.LoginTestCase.verifyValidLoginTest(LoginTestCase.java:45)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-tests-class-failed -->
-          <div class="suite-tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tg.testCase.DashboardTestCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dashboardTestCase">
-                  </a> <!-- dashboardTestCase -->
-                  <span class="method-name">dashboardTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests-class-passed -->
           <div class="suite-tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -219,14 +196,9 @@ Session ID: 0ab959d6fea91484974b5765ae01ec31
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;tests&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.tg.extentReportListener.NGExtentReport&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression Testing&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tg.testCase.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;com.tg.testCase.DashboardTestCase&quot;/&gt;
-      &lt;class name=&quot;com.tg.testCase.SingaporeGameTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression Testing --&gt;
 &lt;/suite&gt; &lt;!-- tests --&gt;
@@ -240,7 +212,7 @@ Session ID: 0ab959d6fea91484974b5765ae01ec31
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Testing (3 classes)</span>
+                <span class="test-name">Regression Testing (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -266,24 +238,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyValidLoginTest')
 data.setCell(0, 2, 'com.tg.testCase.LoginTestCase')
-data.setCell(0, 3, 1001);
+data.setCell(0, 3, 261);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLoginPageTitleTest')
 data.setCell(1, 2, 'com.tg.testCase.LoginTestCase')
-data.setCell(1, 3, 233);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dashboardTestCase')
-data.setCell(2, 2, 'com.tg.testCase.DashboardTestCase')
-data.setCell(2, 3, 33);
+data.setCell(1, 3, 43);
 window.suiteTableData['tests']= { tableData: data, tableDiv: 'times-div-tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 304 ms</span>
               <div id="times-div-tests">
               </div> <!-- times-div-tests -->
             </div> <!-- times-div -->
@@ -309,40 +277,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tg.testCase.DashboardTestCase</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">dashboardTestCase</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.tg.testCase.LoginTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitleTest</span>
-                <span class="method-start">49518 ms</span>
+                <span class="method-start">9391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">49754 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyLoginPageTitleTest status=SUCCESS method=LoginTestCase.verifyLoginPageTitleTe...)</span>
+                <span class="method-start">9439 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">50635 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyValidLoginTest</span>
-                <span class="method-start">63660 ms</span>
+                <span class="method-start">9449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">66888 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyValidLoginTest status=FAILURE method=LoginTestCase.verifyValidLoginTest()[pri...)</span>
+                <span class="method-start">9719 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">endReport</span>
+                <span class="method-start">10941 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

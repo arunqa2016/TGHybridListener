@@ -17,10 +17,11 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.tg.base.Base;
 
-public class ExtentReporterNG implements IReporter {
+public class ExtentReporterNG extends Base implements IReporter {
 
-	private ExtentReports extent;
+	//private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
