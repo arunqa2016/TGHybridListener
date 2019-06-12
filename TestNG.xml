@@ -10,8 +10,8 @@
 	<test name="Regression Testing">
 		<classes>
 			<class name="com.tg.testCase.LoginTestCase"></class>
-<!-- 			<class name="com.tg.testCase.DashboardTestCase"></class> -->
-			<!-- <class name="com.tg.testCase.SingaporeGameTestCase"></class> -->
+			<class name="com.tg.testCase.DashboardTestCase"></class>
+			<class name="com.tg.testCase.SingaporeGameTestCase"></class>
 		</classes>
 	</test>
 </suite>

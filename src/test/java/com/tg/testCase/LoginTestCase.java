@@ -42,7 +42,7 @@ public class LoginTestCase extends Base {
 	@Test(priority=2)
 	public void verifyValidLoginTest() throws InterruptedException {
 		extentTest = extent.startTest("To verify correct login functionality", "Correct login credentials test");
-		dashboardPage = loginPage.validateLoginFunctionality(prop.getProperty("usernamee"), prop.getProperty("password"));
+		dashboardPage = loginPage.validateLoginFunctionality(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 }
