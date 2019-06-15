@@ -76,7 +76,7 @@ public class Base {
 		
 	}
 	
-	@AfterMethod
+	/*@AfterTest
 	public void tearDown(ITestResult result) throws IOException {
 		
 		if(result.getStatus()==ITestResult.FAILURE){
@@ -95,16 +95,14 @@ public class Base {
 
 		}
 		extent.endTest(extentTest); //ending test and ends the current test and prepare to create html report
-		//driver.quit();
-		
-	}
+	}*/
 	
-	@AfterTest
+	@AfterSuite
 	public void endReport() {
+		extent.endTest(extentTest);
 		extent.flush();
-		driver.close();
-		driver.get(reportLocation);
+		//driver.close();
+		//driver.get(reportLocation);
 	}
 	
-
 }

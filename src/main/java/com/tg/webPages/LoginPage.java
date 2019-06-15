@@ -48,6 +48,11 @@ public class LoginPage extends Base {
 		Assert.assertTrue(clickPassButton.isDisplayed());
 		clickPassButton.click();
 		
+		Assert.assertTrue(agree.isDisplayed());
+		agree.click();
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println("Current URL is - " + currentUrl);
+		
 		return new DashboardPage();
 	}
 	

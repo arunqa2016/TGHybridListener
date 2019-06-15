@@ -26,23 +26,29 @@ public class LoginTestCase extends Base {
 		super();
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void verifyLoginPageTitleTest() {
 		extentTest = extent.startTest("To verify title of Login Page", "Title Test on login page");
 		String loginTitle = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(loginTitle, prop.getProperty("loginPageTitle"));
+		System.out.println(loginTitle);
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void verifyValidLoginTest() throws InterruptedException {
 		extentTest = extent.startTest("To verify correct login functionality", "Correct login credentials test");
 		dashboardPage = loginPage.validateLoginFunctionality(prop.getProperty("username"), prop.getProperty("password"));
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 	
 }

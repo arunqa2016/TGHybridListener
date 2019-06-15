@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [tests]">
+  <test thread-count="5" name="Regression Testing(failed)">
+    <classes>
+      <class name="com.tg.testCase.SingaporeGameTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateSingaporeGameTest"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.tg.testCase.SingaporeGameTestCase -->
+    </classes>
+  </test> <!-- Regression Testing(failed) -->
+</suite> <!-- Failed suite [tests] -->
