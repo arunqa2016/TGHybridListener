@@ -15,8 +15,8 @@ import com.tg.base.Base;
 
 public class Support extends Base {
 	
-	@FindBy(how = How.XPATH, using = "btn btn-primary") @CacheLookup static WebElement clickOK;
-	@FindBy(how = How.XPATH, using = "btn btn-default") @CacheLookup static WebElement clickBATAL;
+	@FindBy(how = How.XPATH, using = "btn btn-primary") @CacheLookup WebElement clickOK;
+	@FindBy(how = How.XPATH, using = "btn btn-default") @CacheLookup WebElement clickBATAL;
 	
 	public static JavascriptExecutor jse = (JavascriptExecutor)driver;
 	
@@ -40,12 +40,12 @@ public static void scrollUpPage(WebDriver driver) {
 		System.out.println("Page scrolled UP and JS called");
 	}
 
-	public static void clickKirimButton() {
+	public void clickKirimButton() {
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("btn btn-primary")));
 		clickOK.click();
 	}
 	
-	public static void clickBatalButton() {
+	public void clickBatalButton() {
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("btn btn-default")));
 		clickBATAL.click();
 	}
